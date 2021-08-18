@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=6,
+    int b=4;
+    float c=10.6,
+    float d=8.6;
+    
+
+    printf("a+b = %d\n",a+b);
+    printf("a-b = %d\n",a-b);
+    printf("a*b = %d\n",a*b);
+    printf("a/b = %d\n",a/b);
+    printf("a%b = %d\n",a%b);
+    
+
+    printf("c>d = %d\n",c>d);
+    printf("c<d = %d\n",c<d);
+    printf("c>=d = %d\n",c>=d);
+    printf("c<=d = %d\n",c<=d);
+    printf("c==d = %d\n",c==d);
+    printf("c!=d = %d\n",c!=d);
+    
+   
+    printf("a&b = %d\n",a&b);
+    printf("a|b = %d\n",a|b);
+    printf("a^b = %d\n",a^b);
+
+    printf("a&&b = %d\n",a&&b);
+    printf("a||b = %d\n",a||b);
+
+}

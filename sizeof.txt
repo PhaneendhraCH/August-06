@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+
+int main()
+{
+    printf("sizeof int is %lu\n",sizeof(int));
+    printf("sizeof char is %lu\n",sizeof(char));
+    printf("sizeof float is %lu\n",sizeof(float));
+    printf("sizeof double is %lu\n",sizeof(double));
+    printf("sizeof long is %lu\n",sizeof(long));
+    printf("sizeof short is %lu\n",sizeof(short));
+    printf("sizeof long double is %lu\n",sizeof(long double));
+    printf("sizeof unsigned int is %lu\n",sizeof(unsigned int));
+    printf("sizeof signed int is %lu\n",sizeof(signed int));
+    printf("sizeof unsigned char is %lu\n",sizeof(unsigned char));
+    printf("sizeof signed char is %lu\n",sizeof(signed char));
+    printf("sizeof unsigned long is %lu\n",sizeof( unsigned long));
+    
+    return 0;
+}

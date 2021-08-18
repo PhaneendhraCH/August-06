@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+struct cll              
+{
+    char ch;
+    struct cll *next;
+}*node;
+
+struct cll  *first = NULL, *last = NULL;
+
+void insert_node(char vowels)
+{
+    struct cll *new = malloc(sizeof(struct cll));
+    if(first == NULL)
+    {
+        new -> ch = vowels;
+        new -> next = first;
+        first = last = new;
+    }
+    else
+    {
+        new -> ch = vowels;
+        new -> next = first;
+        last -> next = new;
+        last = new;
+    }
+}
+void display()
+{
+    struct cll  *temp= first;
+    do
+    {
+     printf("%d\n",temp -> ch);
+     temp = temp -> next;
+    }
+    while(temp!=first);
+}
+int main()
+{
+    
+    insert_node('a');
+    insert_node('e');
+    insert_node('i');
+    insert_node('o');
+    insert_node('u');
+
+    display();
+    return 0;
+}

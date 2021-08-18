@@ -1,0 +1,48 @@
+#include<stdio.h>
+#include <stdlib.h>
+struct node {
+    
+    int data;
+    struct node *link;
+}*start;
+
+void createnodes(){
+    int i,n;
+    printf("Enter total no.of nodes ot be added : \n");
+    scanf("%d",&n);
+    
+    struct node *newnode,*current;
+    
+    for (i=0 ;i<n;i++){
+        newnode = malloc(sizeof(struct node));
+        scanf("%d",&newnode->data);
+        newnode->link = NULL;
+        
+        if (i == 0){
+            start = newnode;
+            current = newnode;
+        }
+        
+        else{
+           
+            current->link = newnode;
+            current = newnode;
+        }
+    }
+    
+    struct node * disp;
+    disp = start;
+    
+    while(disp!=NULL)
+    {
+        printf("%d\t",disp->data);
+        disp = disp->link;
+    }
+}
+
+
+int main()
+{
+    createnodes();
+    return 0;
+}
